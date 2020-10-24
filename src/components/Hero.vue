@@ -6,21 +6,21 @@
         <div class="content content-wrapper flex-layout">
 
             <!-- Icon list -->
-            <div class="icon-list w-50 d-flex align-center flex-column">
+            <div class="icon-list w-50 d-flex align-center justify-start flex-column">
                 <!-- 1 -->
-                <div class="icon-content d-flex justify-between align-center green">
+                <div class="icon-content d-flex justify-start align-center green">
                     <i class="fas fa-hand-holding-usd"></i>
                     <p>Turn your stuff into cash donations</p>
                 </div>
                 <!-- 2 -->
-                <div class="icon-content d-flex justify-between align-center blue">
+                <div class="icon-content d-flex justify-start align-center blue">
                     <i class="fas fa-mobile-alt"></i>
-                    <p>Turn your stuff into cash donations</p>
+                    <p>Shop allgood.markets - and support a charity</p>
                 </div>
                 <!-- 3 -->
-                <div class="icon-content d-flex justify-between align-center red">
+                <div class="icon-content d-flex justify-start align-center red">
                     <i class="far fa-heart"></i>
-                    <p>Turn your stuff into cash donations</p>
+                    <p>A new way to fundraise</p>
                 </div>
             </div>
 
@@ -90,10 +90,15 @@ export default {
                 .icon-content {
                     margin-bottom: 20px;
                     border-radius: 12px;
+                    width: 300px;
                     height: 60px;
-                    padding-right: 30px;
+                    padding-right: 60px;
                     color: $light;
                     background: $dark-blue;
+
+                    p {
+                        width: 220px;
+                    }
 
                     i {
                         width: 62px;
@@ -105,6 +110,7 @@ export default {
                         transform: translateX(-5px);
                         color: $dark;
                         font-size: 28px;
+                        margin-right: 10px;
                     }
 
                     &.green {
