@@ -118,7 +118,7 @@ export default {
         position: relative;
         display: flex;
         background: $primary-bg-color;
-        padding: 5px 0;
+        padding: 5px 0 50px 0;
 
         img.logo {
             width: 180px;
@@ -151,7 +151,7 @@ export default {
         /* search and post item */
         %search-and-post {
             position: absolute;
-            top: 100%;
+            bottom: 0;
             width: 100%;
             text-align: center;
             transition: .5s;
