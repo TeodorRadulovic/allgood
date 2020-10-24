@@ -9,6 +9,7 @@ body {
     font-size: 16px;
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 h1,
@@ -53,8 +54,19 @@ h6 {
 p {
     font-family: $font-family-primary;
     padding-top: 0;
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-light {
+    color: $light;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .wrapper {
@@ -75,6 +87,22 @@ p {
 /********************
     Flexbox - basic
 *********************/
+
+.d-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.flex-column {
+    flex-direction: column;
+}
 
 //flex combine
 .flex-layout {

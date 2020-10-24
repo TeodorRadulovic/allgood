@@ -1,22 +1,24 @@
 <template>
     <div id="app">
-        <Navigation />
+        <Hero />
     </div>
 </template>
 
 <script>
-import Navigation from "./components/Navigation.vue";
+import Hero from "@/components/Hero.vue";
 
 export default {
     name: "App",
     components: {
-        Navigation
+        Hero
     },
 };
 </script>
 
 <style lang="scss">
-    #app {
-
-    }
+    $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+    @import "~@fortawesome/fontawesome-free/scss/fontawesome";
+    @import "~@fortawesome/fontawesome-free/scss/solid"; // fas
+    @import "~@fortawesome/fontawesome-free/scss/regular"; // far
+    @import "~@fortawesome/fontawesome-free/scss/brands"; // fab
 </style>
