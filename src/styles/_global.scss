@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: $font-family-primary;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $font-family-primary;
+    line-height: 1.25em;
+    color: $light;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0 0 2.5rem;
+}
+
+h2 {
+    font-size: 36px;
+    margin: 0 0 2rem;
+}
+
+h3 {
+    font-size: 30px;
+    margin: 0 0 1.5rem;
+}
+
+h4 {
+    font-size: 26px;
+    margin: 0 0 1rem;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+p {
+    font-family: $font-family-primary;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+.content-wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.d-none {
+    display: none !important;
+}
+
+
+/********************
+    Flexbox - basic
+*********************/
+
+//flex combine
+.flex-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
