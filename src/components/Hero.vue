@@ -28,7 +28,7 @@
             <div class="hero-img w-50">
                 <img :src="img" alt="hero-image">
             </div>
-
+            
         </div>
 
 

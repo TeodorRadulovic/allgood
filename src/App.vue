@@ -1,16 +1,23 @@
 <template>
     <div id="app">
         <Hero />
+        <ImageWithText />
+        <SignUpDetail />
+
     </div>
 </template>
 
 <script>
 import Hero from "@/components/Hero.vue";
+import ImageWithText from "@/components/ImageWithText.vue";
+import SignUpDetail from "@/components/SignUpDetail.vue";
 
 export default {
     name: "App",
     components: {
-        Hero
+        Hero,
+        ImageWithText,
+        SignUpDetail
     },
 };
 </script>
