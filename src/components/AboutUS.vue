@@ -47,6 +47,7 @@
             </div>
 
             <div class="video d-flex w-100">
+                <h4>Watch the video</h4>
                 <img :src="video" alt="">
             </div>
 
@@ -83,8 +84,10 @@ export default {
 
 <style scoped lang="scss">
     .about-us {
+        background: $light-gray;
         position: relative;
-        margin: 50px auto 100px auto;
+        padding-top: 50px;
+        padding-bottom: 100px;
         color: $dark-blue;
         text-align: center;
 
@@ -150,6 +153,10 @@ export default {
                     width: 400px;
                     height: auto;
                 }
+
+                h4 {
+                    display: none;
+                }
             }
         }
 
@@ -164,6 +171,50 @@ export default {
                 margin-bottom: 1.25rem;
             }
         }
+    }
 
+    /****************
+       Responsive
+    *****************/
+    @media(max-width: 768px) {
+        .about-us {
+            padding-bottom: 20px;
+            .content {
+                .icons {
+                    flex-wrap: nowrap;
+                    overflow-x: auto;
+                }
+
+                .icon-box {
+                    flex-shrink: 0;
+                    margin-right: 40px;
+                    img {
+                        &.arrow, &.heart {
+                            display: none;
+                        }
+                    }
+                }
+
+                .video {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 50px;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    h4 {
+                        color: $dark-blue;
+                        font-weight: bold;
+                        display: block;
+                    }
+                }
+            }
+
+            div.text {
+                display: none;
+            }
+        }
     }
 </style>
