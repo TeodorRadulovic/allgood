@@ -1,8 +1,9 @@
 <template>
     <div class="featured-slider">
+        <h3>Featured items</h3>
         <div class="wrapper">
             <carousel :perPage="4.5" :navigationEnabled="true" :paginationEnabled="false" :navigationNextLabel='""' :navigationPrevLabel='""'>
-                <slide class="slide" v-for="slide in slides" :key="slide.name">
+                <slide class="slide" v-for="slide in slides" :key="slide.id">
                     <SliderItems :img="slide.img" :name="slide.name" :autohor="slide.autohor" :description="slide.description" :price="slide.price" />
                 </slide>
 
@@ -34,6 +35,7 @@ export default {
 
             slides: [
                 { 
+                    id: 1,
                     img: img1,
                     name: 'Almost new sofa',
                     autohor: 'John S.',
@@ -42,6 +44,7 @@ export default {
                 },
 
                 { 
+                    id: 2,
                     img: img2,
                     name: 'Beige sofa',
                     autohor: 'Harinder B.',
@@ -50,6 +53,7 @@ export default {
                 },
 
                 { 
+                    id: 3,
                     img: img1,
                     name: 'Almost new sofa',
                     autohor: 'John S.',
@@ -58,6 +62,7 @@ export default {
                 },
 
                 { 
+                    id: 4,
                     img: img2,
                     name: 'Beige sofa',
                     autohor: 'Harinder B.',
@@ -66,6 +71,7 @@ export default {
                 },
 
                 { 
+                    id: 5,
                     img: img1,
                     name: 'Almost new sofa',
                     autohor: 'John S.',
@@ -74,6 +80,7 @@ export default {
                 },
 
                 { 
+                    id: 6,
                     img: img2,
                     name: 'Beige sofa',
                     autohor: 'Harinder B.',
@@ -82,6 +89,7 @@ export default {
                 },
 
                 { 
+                    id: 7,
                     img: img1,
                     name: 'Almost new sofa',
                     autohor: 'John S.',
@@ -90,6 +98,7 @@ export default {
                 },
 
                 { 
+                    id: 8,
                     img: img2,
                     name: 'Beige sofa',
                     autohor: 'Harinder B.',
@@ -98,6 +107,7 @@ export default {
                 },
 
                 { 
+                    id: 9,
                     img: img1,
                     name: 'Almost new sofa',
                     autohor: 'John S.',
@@ -105,6 +115,7 @@ export default {
                     price: 300
                 },
                 { 
+                    id: 10,
                     img: img2,
                     name: 'Beige sofa',
                     autohor: 'Harinder B.',
@@ -113,6 +124,7 @@ export default {
                 },
 
                 { 
+                    id: 11,
                     img: img1,
                     name: 'Almost new sofa',
                     autohor: 'John S.',
@@ -131,6 +143,12 @@ export default {
         min-height: 30vh;
         padding: 50px 0;
 
+        h3 {
+            text-align: center;
+            color: $dark-blue;
+            font-weight: bold;
+        }
+
         .slide {
             position: relative;
             box-sizing: border-box;
@@ -139,6 +157,7 @@ export default {
             border-radius: 30px;
             background: $light-gray;
             overflow: hidden;
+            cursor: grab;
         }
     }
 </style>

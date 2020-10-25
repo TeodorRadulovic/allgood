@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <Hero />
-        <HowItWorks />
+        <AboutUS />
         <ImageWithText />
         <FeaturedSlider />
         <SignUpDetail />
@@ -12,7 +12,7 @@
 
 <script>
 import Hero from "@/components/Hero.vue";
-import HowItWorks from "@/components/HowItWorks.vue";
+import AboutUS from "@/components/AboutUS.vue";
 import ImageWithText from "@/components/ImageWithText.vue";
 import FeaturedSlider from "@/components/slider/FeaturedSlider.vue";
 import SignUpDetail from "@/components/SignUpDetail.vue";
@@ -22,7 +22,7 @@ export default {
     name: "App",
     components: {
         Hero,
-        HowItWorks,
+        AboutUS,
         ImageWithText,
         SignUpDetail,
         FeaturedSlider,

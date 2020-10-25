@@ -7,7 +7,7 @@ module.exports = {
           @import "@/styles/_variables.scss";
           @import "@/styles/_global.scss";
           `
-        }
+        },
       }
     }
     // ...

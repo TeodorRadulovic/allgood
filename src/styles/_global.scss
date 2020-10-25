@@ -51,6 +51,18 @@ h6 {
     font-size: 16px;
 }
 
+.red {
+    color: $red;
+}
+
+div.separator {
+    width: 70px;
+    height: 2px;
+    background: $light-gray;
+    margin: auto;
+    margin-top: 1.25rem;
+}
+
 p {
     font-family: $font-family-primary;
     padding-top: 0;
@@ -186,7 +198,7 @@ a.button.blue {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(181,181,181,1);
     transition: .3s;
 
     &:focus {
