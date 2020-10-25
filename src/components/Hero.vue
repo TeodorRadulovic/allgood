@@ -65,7 +65,7 @@ export default {
     .hero {
         position: relative;
         min-height: 85vh;
-        widows: 100%;
+        width: 100%;
         background: $primary-bg-color;
         
         .curved-bg {
@@ -137,6 +137,40 @@ export default {
                         }                       
                         border: 2px solid $red;
                     }
+                }
+            }
+        }
+    }
+
+    /****************
+       Responsive
+    *****************/
+    .hero {
+        .curved-bg {
+            display: none;
+        }
+
+        .content {
+            padding-bottom: 50px;
+            .icon-list {
+                order: 2;
+                width: 100%;
+
+                .icon-content {
+                    width: 100%;
+                    padding: 0;
+
+                    p {
+                        width: calc(100% - 62px);
+                    }
+                }
+            }
+
+            .hero-img {
+                order: 1;
+                width: 100%;
+                img {
+                    width: 100%;
                 }
             }
         }

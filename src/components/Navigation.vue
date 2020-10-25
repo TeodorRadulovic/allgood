@@ -350,7 +350,6 @@ export default {
     /****************
        Responsive
     *****************/
-
     @media(max-width: 768px) {
         .nav {
             padding: 20px 0;
