@@ -36,7 +36,7 @@
 
 
 
-        <div class="copyright content-wrapper d-flex">
+        <div class="copyright content-wrapper d-flex align-center">
             <p>&copy; AllGood 2020. All Rights Reserved</p>
             <a href="javascript:void(0)">Privacy Policy</a>
             <a href="javascript:void(0)">Terms of Services</a>
@@ -65,6 +65,7 @@ export default {
         background: $gray;
         padding: 30px 0;
         font-size: 14px;
+        color: $dark-blue;
 
         h6 {
             margin: 0 0 1.25rem 0;
