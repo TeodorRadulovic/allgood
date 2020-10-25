@@ -1,6 +1,6 @@
 <template>
     <div class="hero">
-        <Navigation />
+        <Navigation :mobileView="this.mobileView" />
 
         <!-- Hero content -->
         <div class="content content-wrapper flex-layout align-center">
@@ -26,7 +26,7 @@
 
             <!-- Img -->
             <div class="hero-img w-50">
-                <img :src="img" alt="hero-image">
+                <img :src="mobileView ? imgMobile : img" alt="hero-image">
             </div>
             
         </div>
@@ -40,6 +40,7 @@
 <script>
 import Navigation from "@/components/Navigation.vue";
 import img from '@/assets/media/Image-main.png'
+import imgMobile from '@/assets/media/image-mobile.png'
 
 export default {
     name: "Hero",
@@ -47,12 +48,17 @@ export default {
         Navigation
     },
 
+    props: {
+        mobileView: Boolean
+    },
+
     data() {
         return {
-            img
+            img, imgMobile
         }
     }
 }
+
 </script>
 
 <style scoped lang="scss">

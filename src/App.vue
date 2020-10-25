@@ -1,12 +1,11 @@
 <template>
     <div id="app">
-        <Hero />
+        <Hero :mobileView='mobileView'/>
         <AboutUS />
         <ImageWithText />
         <FeaturedSlider />
         <SignUpDetail />
         <Footer />
-
     </div>
 </template>
 
@@ -28,6 +27,37 @@ export default {
         FeaturedSlider,
         Footer
     },
+
+    data() {
+        return {
+            mobileView: false
+        }
+    },
+
+    mounted() {
+        this.handleResize();
+    },
+
+    created() {
+        window.addEventListener('resize', this.handleResize);
+        this.handleResize();
+    },
+
+    destroyed() {
+        window.removeEventListener('resize', this.handleResize);
+    },
+
+    methods: {
+        handleResize() {
+            let width = window.innerWidth;
+
+            if(width < 768) {
+                this.mobileView = true;
+            } else {
+                this.mobileView = false;
+            }
+        }
+    }
 };
 </script>
 

@@ -2,7 +2,7 @@
     <div class="nav">
         <div class="content wrapper flex-layout align-center">
             <!-- logo -->
-            <a href="javascript:void(0)"><img class="logo" :src="logo" alt="logo"></a>
+            <a class="logo" href="javascript:void(0)"><img :src="mobileView ? logoMobile : logo" alt="logo"></a>
 
             <!-- search item -->
             <div class="search-items d-flex justify-between text-light">
@@ -13,7 +13,7 @@
             <!-- search item form -->
             <div class="search-items-form active">
                 <form>
-                    <input type="text" class="search" placeholder="Location">
+                    <input type="text" class="search" :placeholder="mobileView ? 'Search or post...' : 'Location'">
                     <input type="text" class="search" placeholder="Category">
                     <input type="text" class="search" placeholder="Charity">
                     <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
@@ -63,15 +63,19 @@
 <script>
 /* Import logo */
 import logo from "@/assets/media/logo-jsguru.png";
+import logoMobile from "@/assets/media/logo-mobile.png";
 import person from "@/assets/media/teodor.jpg";
 
 export default {
     name: "Navigation",
 
+    props: {
+        mobileView: Boolean
+    },
+
     data() {
         return {
-            logo,
-            person,
+            logo, logoMobile, person,
             notifications: 2
         }
     },
@@ -113,6 +117,8 @@ export default {
 }
 </script>
 
+
+
 <style scoped lang="scss">
     .nav {
         position: relative;
@@ -120,9 +126,11 @@ export default {
         background: $primary-bg-color;
         padding: 5px 0 50px 0;
 
-        img.logo {
-            width: 180px;
-            height: auto;
+        a.logo {
+            img {
+                width: 180px;
+                height: auto;
+            }
         }
 
         .search-items {
@@ -333,6 +341,56 @@ export default {
                     i {
                         transform: rotate(180deg);
                         transition: .5s;
+                    }
+                }
+            }
+        }
+    }
+
+    /****************
+       Responsive
+    *****************/
+
+    @media(max-width: 768px) {
+        .nav {
+            padding: 20px 0;
+            a.logo {
+                width: 40%;
+                img {
+                    width: 100%;
+                }
+            }
+            background-color: $light;
+            .search-items, .status-info, .post-items-form {
+                display: none;
+            }
+
+            .search-items-form {
+                position: relative;
+                width: 55%;
+                left: unset;
+                transform: translateX(0);
+                
+                &.active {
+                    left: unset;
+                    transform: translateX(0);
+                }
+
+                form {
+                    input {
+                        width: 100%;
+                        background: $light-gray;
+                        padding-right: 5px;
+                        &:nth-child(2), &:nth-child(3) {
+                            display: none;
+                        }
+
+                        &::placeholder {
+                            color: $dark-blue;
+                        }
+                    }
+                    button {
+                        transform: translateX(-22%);
                     }
                 }
             }
