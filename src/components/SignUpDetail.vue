@@ -26,7 +26,7 @@ export default {
             box-sizing: border-box;
             width: 90%;
             padding: 50px 15%;
-            background: $gray;
+            background: $light-gray;
 
             h3 {
                 font-weight: bold;

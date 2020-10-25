@@ -14,7 +14,7 @@
 import Hero from "@/components/Hero.vue";
 import HowItWorks from "@/components/HowItWorks.vue";
 import ImageWithText from "@/components/ImageWithText.vue";
-import FeaturedSlider from "@/components/FeaturedSlider.vue";
+import FeaturedSlider from "@/components/slider/FeaturedSlider.vue";
 import SignUpDetail from "@/components/SignUpDetail.vue";
 import Footer from "@/components/Footer.vue";
 

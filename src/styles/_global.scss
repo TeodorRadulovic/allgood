@@ -121,6 +121,10 @@ a {
     justify-content: flex-end;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
 .flex-column {
     flex-direction: column;
 }
@@ -168,4 +172,65 @@ a.button.blue {
     @extend %button;
     background: $blue;
     border: 1px solid $blue;
+}
+
+/********************
+    Slider
+*********************/
+%sliderButton {
+    
+    background: $light;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    transition: .3s;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900; 
+        color: $dark-blue;
+    }
+}
+
+button.VueCarousel-navigation-button.VueCarousel-navigation-next {
+    transform: translateX(-50%);
+    @extend %sliderButton;
+    &:after {
+        content: "\f054";
+    }
+
+    &:active {
+        transform:translateX(-50%) scale(.95);
+        transition: .3s;
+    }
+}
+
+button.VueCarousel-navigation-button.VueCarousel-navigation-prev {
+    transform: translateX(50%);
+    @extend %sliderButton;
+    &:after {
+        content: "\f053";
+    }
+
+    &:active {
+        transform:translateX(50%) scale(.95);
+        transition: .3s;
+    }
+}
+
+button.VueCarousel-navigation-button.VueCarousel-navigation-prev.VueCarousel-navigation--disabled, 
+button.VueCarousel-navigation-button.VueCarousel-navigation-next.VueCarousel-navigation--disabled {
+    display: none !important;
 }

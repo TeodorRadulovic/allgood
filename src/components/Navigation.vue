@@ -138,7 +138,7 @@ export default {
                         top: 100%;
                         padding-top: 5px;
                         width: 100%;
-                        border-bottom: 2px solid $gray;
+                        border-bottom: 2px solid $light-gray;
                     }
                 }
             }
@@ -167,7 +167,7 @@ export default {
                     padding: 22px;
                     margin: 0;
                     border: 0;
-                    border-right: 1px solid $gray;
+                    border-right: 1px solid $light-gray;
 
                     &:nth-child(1) {
                         border-radius: 14px 0 0 14px;
