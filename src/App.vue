@@ -3,6 +3,7 @@
         <Hero />
         <ImageWithText />
         <SignUpDetail />
+        <Footer />
 
     </div>
 </template>
@@ -11,13 +12,15 @@
 import Hero from "@/components/Hero.vue";
 import ImageWithText from "@/components/ImageWithText.vue";
 import SignUpDetail from "@/components/SignUpDetail.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
     name: "App",
     components: {
         Hero,
         ImageWithText,
-        SignUpDetail
+        SignUpDetail,
+        Footer
     },
 };
 </script>

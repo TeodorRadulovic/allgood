@@ -3,7 +3,7 @@
         <Navigation />
 
         <!-- Hero content -->
-        <div class="content content-wrapper flex-layout">
+        <div class="content content-wrapper flex-layout align-center">
 
             <!-- Icon list -->
             <div class="icon-list w-50 d-flex align-center justify-start flex-column">

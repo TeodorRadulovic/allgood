@@ -1,7 +1,7 @@
 <template>
     <div class="image-with-text">
 
-        <div class="wrapper flex-layout h-100">
+        <div class="wrapper flex-layout align-center h-100">
             <div class="image w-50">
                 <img :src="img" alt="image">
             </div>

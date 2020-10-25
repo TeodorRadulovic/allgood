@@ -3,7 +3,7 @@
         <div class="content">
             <h3>Are you a Charity or Organization looking to Fundraise?</h3>
             <p>Want to register with AllGood.market so people can donate the proceeds of their sales to you?</p>
-            <p>Please contact us at info@allgood.market or complete out online form.</p>
+            <p>Please contact us at <a class="text-light" href="mailto:info@allgood.market">info@allgood.market</a> or complete out online form.</p>
             <a href="javascript:void(0)" class="button red">Sing up charity/campaign</a>
 
             <div class="circle"></div>
@@ -24,7 +24,7 @@ export default {
         .content {
             position: relative;
             box-sizing: border-box;
-            width: 80%;
+            width: 90%;
             padding: 50px 15%;
             background: $gray;
 
@@ -34,8 +34,12 @@ export default {
             }
 
             p {
-                color: $dark-gary;
+                color: $dark-gray;
                 margin-bottom: 1.25rem;
+
+                a {
+                    color: $dark-gray;
+                }
             }
 
             .circle {

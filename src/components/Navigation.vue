@@ -1,6 +1,6 @@
 <template>
     <div class="nav">
-        <div class="content wrapper flex-layout">
+        <div class="content wrapper flex-layout align-center">
             <!-- logo -->
             <a href="javascript:void(0)"><img class="logo" :src="logo" alt="logo"></a>
 
@@ -30,11 +30,11 @@
             </div>
 
             <!-- status information -->
-            <div class="status-info flex-layout">
+            <div class="status-info flex-layout align-center">
                 <i class="far fa-envelope"></i>
                 <i :data-notifications="this.notifications" class="notifications far fa-bell"></i>
 
-                <div v-on:click="accountDropdown()" class="account-detail flex-layout">
+                <div v-on:click="accountDropdown()" class="account-detail flex-layout align-center">
                     <div class="acc-img">
                         <img :src="person" alt="">
                     </div>

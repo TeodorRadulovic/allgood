@@ -129,7 +129,6 @@ a {
 .flex-layout {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -149,7 +148,7 @@ a {
     transition: .3s;
 
     &:hover {
-        transform: rotate(-3deg) scale(1.02);
+        transform: rotate(-1deg) scale(1.02);
         transition: .3s;
     }
 }
