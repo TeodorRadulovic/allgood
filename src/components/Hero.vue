@@ -39,8 +39,8 @@
 
 <script>
 import Navigation from "@/components/Navigation.vue";
-import img from '@/assets/media/image-main.png'
-import imgMobile from '@/assets/media/image-mobile.png'
+import img from '@/assets/media/image_main.png'
+import imgMobile from '@/assets/media/image_mobile.png'
 
 export default {
     name: "Hero",
