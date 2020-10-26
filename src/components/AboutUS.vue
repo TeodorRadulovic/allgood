@@ -178,13 +178,24 @@ export default {
                 margin-bottom: 1.25rem;
             }
         }
-    }
 
-    /****************
-       Responsive
-    *****************/
-    @media(max-width: 768px) {
-        .about-us {
+        /****************
+        Responsive
+        *****************/
+        @media (max-width: 1280px) {
+            .content{
+                .icon-box {
+                    img {
+                        &.heart {
+                            right: -52%;
+                            width: 750px;
+                        }
+                    }
+                }
+            }
+
+        }
+        @media(max-width: 1150px) {
             padding-bottom: 20px;
             .content {
                 .icons {
@@ -224,4 +235,6 @@ export default {
             }
         }
     }
+
+
 </style>
