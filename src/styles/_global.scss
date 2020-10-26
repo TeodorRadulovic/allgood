@@ -170,6 +170,10 @@ a {
         transform: rotate(-1deg) scale(1.02);
         transition: .3s;
     }
+
+    @media(max-width: 768px) {
+        padding: 14px 40px;
+    }
 }
 
 a.button.transparent {

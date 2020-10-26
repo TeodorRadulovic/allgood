@@ -47,11 +47,37 @@ export default {
             box-sizing: border-box;
             padding-right: 10%;
             p {
+                font-size: 14px;
                 color: $light;
                 margin-bottom: 1.5rem;
             }
         }
+    }
 
+    /****************
+       Responsive
+    *****************/
+    @media(max-width: 768px) {
+        .image-with-text {
+            flex-wrap: wrap;
+            height: auto;
+            padding: 50px 0;
 
+            .image {
+                width: 100%;
+                order: 2;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .content {
+                order: 1;
+                width: 100%;
+                margin-bottom: 50px;
+                padding: 0;
+            }
+        }
     }
 </style>

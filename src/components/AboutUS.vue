@@ -48,7 +48,10 @@
 
             <div class="video d-flex w-100">
                 <h4>Watch the video</h4>
-                <img :src="video" alt="">
+                <a href="https://www.youtube.com/watch?v=13IS3RcEQjY&t" target="_blank">
+                    <img :src="video" alt="video">
+                </a>
+
             </div>
 
             <div class="text">
