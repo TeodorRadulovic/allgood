@@ -2,8 +2,7 @@
     <div class="sign-up-detail d-flex align-center justify-end">
         <div class="content">
             <h3>Are you a Charity or Organization looking to Fundraise?</h3>
-            <p>Want to register with AllGood.market so people can donate the proceeds of their sales to you?</p>
-            <p>Please contact us at <a class="text-light" href="mailto:info@allgood.market">info@allgood.market</a> or complete out online form.</p>
+            <p>Want to register with AllGood.market so people can donate the proceeds of their sales to you? Please contact us at <a class="text-light" href="mailto:info@allgood.market">info@allgood.market</a> or complete out online form.</p>
             <a href="javascript:void(0)" class="button red">Sing up charity/campaign</a>
 
             <div class="circle"></div>
@@ -25,7 +24,7 @@ export default {
             position: relative;
             box-sizing: border-box;
             width: 90%;
-            padding: 50px 15%;
+            padding: 50px 30% 50px 15%;
             background: $light-gray;
 
             h3 {
@@ -76,6 +75,23 @@ export default {
                     0% {border-color: $blue;}
                     50% {border-color: $green;}
                     100% {border-color: $red;}
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                width: 100%;
+                padding: 50px 5%;
+
+                a.button {
+                    position: relative;
+                    z-index: 2;
+                }
+
+                .circle {
+                    left: 100%;
+                    transform: translate(-90%, -60%);
                 }
             }
         }

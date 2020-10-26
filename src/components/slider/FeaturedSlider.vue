@@ -2,7 +2,7 @@
     <div class="featured-slider">
         <h3>Featured items</h3>
         <div class="wrapper">
-            <carousel :perPageCustom="[[100, 1.5], [[550, 3.5]],  [1024, 4.5]]" :navigationEnabled="true" :paginationEnabled="false" :navigationNextLabel='""' :navigationPrevLabel='""'>
+            <carousel :perPageCustom="[[100, 1.5], [550, 3.5],  [1024, 4.5]]" :navigationEnabled="true" :paginationEnabled="false" :navigationNextLabel='""' :navigationPrevLabel='""'>
                 <slide class="slide" v-for="slide in slides" :key="slide.id">
                     <SliderItems :img="slide.img" :name="slide.name" :autohor="slide.autohor" :description="slide.description" :price="slide.price" />
                 </slide>

@@ -8,7 +8,7 @@
 
             <div class="content w-50">
                 <h3>Post an item for sale</h3>
-                <p>TO post an item for sale - please register<br>or sign in ig you are already registered with allgodd</p>
+                <p>To post an item for sale - please register<br>or sign in ig you are already registered with allgodd</p>
                 <a href="javascript:void(0)" class="button red">Sing Up</a>
                 <a href="javascript:void(0)" class="button transparent">Sing In</a>
             </div>
@@ -77,6 +77,10 @@ export default {
                 width: 100%;
                 margin-bottom: 50px;
                 padding: 0;
+                p {
+                    line-height: 2;
+                    font-size: 16px;
+                }
             }
         }
     }

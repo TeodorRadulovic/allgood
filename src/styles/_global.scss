@@ -51,14 +51,14 @@ h6 {
     font-size: 16px;
 }
 
-.text-red {
-    color: $red !important;
+.red {
+    color: $red;
 }
 
 div.separator {
     width: 70px;
     height: 2px;
-    background: $light-gray;
+    background: $extra-light-blue;
     margin: auto;
     margin-top: 1.25rem;
 }
@@ -185,6 +185,7 @@ a.button.red {
     @extend %button;
     background: $red;
     border: 1px solid $red;
+    color: $light;
 }
 
 a.button.blue {

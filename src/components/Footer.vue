@@ -134,6 +134,24 @@ export default {
             }
         }
 
+        @media(max-width: 768px) {
+            .info {
+                width: 100%;
+            }
 
+            .about-us, .charities {
+                width: 100%;
+                margin-top: 50px;
+            }
+
+            .copyright {
+                flex-direction: column;
+                height: auto;
+                align-items: baseline;
+                a {
+                    margin-top: 10px;
+                }
+            }
+        }
     }
 </style>

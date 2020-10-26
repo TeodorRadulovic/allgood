@@ -380,6 +380,9 @@ export default {
                         width: 100%;
                         background: $light-gray;
                         padding-right: 5px;
+                        &:nth-child(1) {
+                            border-radius: 8px 0 0 8px;
+                        }
                         &:nth-child(2), &:nth-child(3) {
                             display: none;
                         }
@@ -390,6 +393,7 @@ export default {
                     }
                     button {
                         transform: translateX(-22%);
+                        border-radius: 5px;
                     }
                 }
             }

@@ -102,6 +102,10 @@ export default {
 
         p {
             color: $dark-gray;
+
+            &.red {
+                color: $red;
+            }
         }
 
         .content {
